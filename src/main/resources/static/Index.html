@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Molde Kino</title>
+    <script src="js/script.js"></script>
+</head>
+<body>
+
+<h1>Bestilling av Kinobilletter</h1>
+
+<label for="filmer">Velg film</label>
+<select id="filmer">
+    <option value="Velg film her">Velg film her</option>
+    <option value="Everything Everywhere all at Once">Everything Everywhere all at Once</option>
+    <option value="Bottoms">Bottoms</option>
+    <option value="Avatar">Avatar</option>
+    <option value="The Lighthouse">The Lighthouse</option>
+</select>
+
+<br>
+<br>
+
+<label for="antallBillett">Antall</label>
+<input id="antallBillett" type="text">
+<span id="feilAntall" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="velgFornavn">Fornavn</label>
+<input id="velgFornavn" type="text">
+<span id="feilFornavn" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="velgEtternavn">Etternavn</label>
+<input id="velgEtternavn" type="text">
+<span id="feilEtternavn" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="velgtlfNr">Telefonnr</label>
+<input id="velgtlfNr" type="text">
+<span id="feilTlfnr" style="color: red"></span>
+
+<br>
+<br>
+
+<label for="velgEpost">Epost</label>
+<input id="velgEpost" type="text">
+<span id="feilEpost" style="color: red"></span>
+
+<br>
+<br>
+
+<button onclick="kjopBillett();">Kjøp billett</button>
+
+<h2>Alle billetter</h2>
+
+<div id="utskrift"></div>
+
+<br>
+<br>
+
+<button onclick="slettBillett()">Slett alle billettene</button>
+
+</body>
+</html>
